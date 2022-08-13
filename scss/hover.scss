@@ -1,5 +1,24 @@
 
+@import "../node_modules/imagehover.css/css/imagehover.min.css";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.side-photo{
+  width: 300px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transform: translate(250px) rotate(-10deg);
+  border-radius: $border-radius;
+  transition: 0.5s;
+}
+
+.side-photo:hover{
+  transform: translate(0) rotate(0deg);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
 
 .product-card{
   overflow: hidden;
@@ -11,4 +30,18 @@
 
 .product-card:hover img{
   transform: scale(1.2) rotate(5deg);
+}
+
+.product-card .promo{
+  z-index: 5;
+  top : $spacer;
+  left: $spacer;
+  transform: translate(-130%);
+  opacity: 0;
+  transition: 2s;
+}
+
+.product-card:hover .promo{
+  opacity: 1;
+  transform: translate(0);
 }
