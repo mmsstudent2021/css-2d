@@ -1,0 +1,74 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oleo+Script+Swash+Caps&family=Raleway&display=swap');
+
+
+@font-face {
+  font-family: "hhz";
+  src: url("../komika-poster/KOMIKAB_.ttf");
+}
+//customize
+
+//$theme-colors: (
+//    "primary": #581b98,
+//    "secondary": #9c1de7,
+//    "success" :  #22eaaa,
+//        "hhz" : #ff5959
+//);
+
+//$primary : #581b98;
+//$secondary : #9c1de7;
+
+//$font-size-base : 2rem;
+
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$headings-font-family: "hhz", cursive;
+$display-font-family: 'Raleway', sans-serif;
+//$display-font-weight : bold;
+
+//$input-padding-y : 1rem;
+//$input-border-radius : 2rem;
+//$btn-border-radius : 2rem;
+
+//$border-radius : 2rem;
+//$input-btn-padding-y:1rem;
+//$input-btn-padding-x:2rem;
+
+//$input-bg : gray;
+//$input-color : white;
+
+//$spacer: 3rem;
+//$spacers: (
+//        0: 0,
+//        1: $spacer * .25,
+//        2: $spacer * .5,
+//        3: $spacer,
+//        4: $spacer * 1.5,
+//        5: $spacer * 3,
+//);
+
+//$border-widths: (
+//        1: 5px,
+//        2: 10px,
+//        3: 15px,
+//        4: 20px,
+//        5: 25px
+//);
+
+$accordion-button-active-bg: orange;
+$accordion-button-active-color: white;
+$accordion-button-focus-box-shadow: none;
+$accordion-body-padding-x: 50px;
+$accordion-body-padding-y: 50px;
+
+$accordion-icon-color:black;
+$accordion-icon-active-color:$accordion-button-active-color;
+
+$accordion-button-icon:         url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{$accordion-icon-color}" class="bi bi-arrow-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/></svg>');
+$accordion-button-active-icon:  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{$accordion-icon-active-color}" class="bi bi-arrow-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/></svg>');
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
