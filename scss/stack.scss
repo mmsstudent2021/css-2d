@@ -1,0 +1,111 @@
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/animate.css/animate.min.css";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.h-500{
+  height: 500px;
+}
+
+.stack-img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  border-radius: $border-radius-xl;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: zoomIn;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(340deg) rotateY(29deg) rotateX(53deg);
+}
+
+@for $i from 0 to 5{
+
+  .stack-img:nth-child(#{$i+1}){
+    top : #{50*$i}px;
+    z-index: #{5-$i};
+    animation-duration: #{1+($i*0.5)}s;
+  }
+
+}
+
+
+.conor{
+  position: relative;
+  top: 0;
+  border: 50px solid black;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  display: inline-block;
+}
+
+.conor-icon{
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  top: 10px;
+  left: 10px;
+}
+
+.card-badge{
+  background-color: $primary;
+  color: $white;
+  position: absolute;
+  //width: 100px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  left: -10px;
+  top: 10px;
+}
+.card-badge::after{
+  content: "";
+  border: 20px solid transparent;
+  border-left-color: $primary;
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+.card-badge::before{
+  content: "";
+  border: 5px solid transparent;
+  border-top-color: $primary;
+  border-right-color: $primary;
+  opacity: 0.7;
+  position: absolute;
+  bottom:-10px;
+  left: 0;
+}
+
+//.stack-img:nth-child(1){
+//  top: 20px;
+//  z-index: 5;
+//}
+//
+//.stack-img:nth-child(2){
+//  top: 40px;
+//  z-index: 4;
+//
+//}
+//
+//.stack-img:nth-child(3){
+//  top: 60px;
+//  z-index: 3;
+//
+//}
+//
+//.stack-img:nth-child(4){
+//  top: 80px;
+//  z-index: 2;
+//
+//}
+//.stack-img:nth-child(5){
+//  top: 100px;
+//  z-index: 1;
+//
+//
+//}
+
